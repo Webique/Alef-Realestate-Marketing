@@ -9,6 +9,7 @@ import ContactSection from "./components/contact-section";
 import ExecutionSection from "./components/execution-section";
 import PricingSection from "./components/pricing-section";
 import ServicesSection from "./components/services-section";
+import SpeedSection from "./components/speed-section";
 
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -22,7 +23,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
       {/* <AboutSection /> */}
       {/* <StatsSection /> */}
       {/* <WhyUsSection /> */}
-      {/* <SpeedSection /> */}
+      <SpeedSection />
       <ExecutionSection />
       <ServicesSection />
       <PricingSection />

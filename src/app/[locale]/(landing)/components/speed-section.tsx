@@ -70,7 +70,7 @@ export default function SpeedSection() {
                     60%
                   </div>
                   <div className="text-sm font-medium text-gray-600">
-                    تسريع وتيرة البيع
+                    {t("stat.acceleration")}
                   </div>
                 </div>
               </m.div>
