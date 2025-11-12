@@ -34,9 +34,9 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-16 max-w-4xl text-center"
         >
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
-            <Building2 className="h-4 w-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">
+          <div className="border-primary/20 bg-primary/5 mb-4 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+            <Building2 className="text-primary h-4 w-4" />
+            <span className="text-primary text-sm font-semibold">
               {t("badge")}
             </span>
           </div>
@@ -59,9 +59,9 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/20 to-accent/10 opacity-0 blur transition duration-300 group-hover:opacity-100" />
+                <div className="from-primary/20 to-accent/10 absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-0 blur transition duration-300 group-hover:opacity-100" />
                 <div className="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow duration-300 group-hover:shadow-lg">
-                  <stat.icon className="mx-auto mb-4 h-10 w-10 text-primary" />
+                  <stat.icon className="text-primary mx-auto mb-4 h-10 w-10" />
                   <div className="mb-2 text-4xl font-bold text-gray-900">
                     <AnimatedCounter end={stat.value} />
                     <span>+</span>
