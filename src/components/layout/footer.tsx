@@ -4,6 +4,8 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
+import Instagram from "@/assets/icons/instagram.svg";
+import TickTock from "@/assets/icons/tiktok.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
 
@@ -19,64 +21,96 @@ const Footer = () => {
   ];
 
   const services = [
-    { label: t("propertyPurchase"), href: "#services" },
-    { label: t("propertyMortgage"), href: "#services" },
-    { label: t("landAndLoan"), href: "#services" },
-    { label: t("selfConstruction"), href: "#services" }
+    { label: t("marketing"), href: "#services" },
+    { label: t("development"), href: "#services" },
+    { label: t("consulting"), href: "#services" }
   ];
 
-  // const socialLinks = [
-  //   {
-  //     icon: Instagram,
-  //     href: siteConfig.links.instagram,
-  //     label: t("socialMedia.instagram"),
-  //     target: "_blank"
-  //   },
-  //   {
-  //     icon: TickTock,
-  //     href: siteConfig.links.tiktok,
-  //     label: t("socialMedia.tiktok"),
-  //     target: "_blank"
-  //   },
-  //   {
-  //     icon: Mail,
-  //     href: `mailto:${siteConfig.support.email}`,
-  //     label: t("socialMedia.email"),
-  //     target: "_blank"
-  //   },
-  //   {
-  //     icon: Phone,
-  //     href: `tel:${siteConfig.support.phone}`,
-  //     label: "Phone",
-  //     target: "_self"
-  //   },
-  //   {
-  //     icon: MapPin,
-  //     href: siteConfig.links.googleMap,
-  //     label: "Location",
-  //     target: "_blank"
-  //   }
-  // ];
+  const socialLinks = [
+    {
+      icon: Instagram,
+      href: `${siteConfig.links.instagram}`,
+      label: "Instagram",
+      target: "_blank"
+    },
+    {
+      icon: TickTock,
+      href: `${siteConfig.links.tiktok}`,
+      label: "TikTok",
+      target: "_blank"
+    },
+    {
+      icon: Mail,
+      href: `mailto:${siteConfig.support.email}`,
+      label: "Email",
+      target: "_blank"
+    },
+    {
+      icon: Phone,
+      href: `tel:${siteConfig.support.phone}`,
+      label: "WhatsApp",
+      target: "_blank"
+    }
+  ];
 
   return (
-    <footer className="from-secondary to-secondary/98 bg-gradient-to-b text-white">
-      <div className="layout px-4 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-          {/* Company Info */}
+    <footer className="bg-secondary relative text-white">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_white_1px,_transparent_1px)] bg-[length:40px_40px]" />
+      </div>
+
+      {/* Decorative Gradient Orbs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#8B7355]/10 blur-[120px]" />
+        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#A89B8C]/10 blur-[120px]" />
+      </div>
+
+      <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
+        {/* Main Footer Content */}
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          {/* Company Info - Takes more space */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="flex flex-col space-y-5"
+            className="lg:col-span-5"
           >
             <Logo
-              imgClassName="invert w-32 lg:w-40 brightness-0 saturate-0"
-              className="lg:ps-5"
+              imgClassName="invert brightness-0 saturate-0 w-36 lg:w-44"
+              className="mb-6"
             />
-            <p className="text-sm leading-relaxed text-gray-400">
+            <p className="mb-8 max-w-md text-base leading-relaxed text-gray-300">
               {t("companyDescription")}
             </p>
+
+            {/* Social Links */}
+            <div className="space-y-4">
+              <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+                {t("connectWithUs")}
+              </h4>
+              <div className="flex gap-3">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <m.a
+                      key={social.label}
+                      href={social.href}
+                      target={social.target}
+                      rel="noopener noreferrer"
+                      className="group relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white/5 transition-all hover:bg-white/10"
+                      aria-label={social.label}
+                      whileHover={{ y: -3 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Icon className="relative z-10 h-5 w-5 text-gray-300 transition-colors group-hover:text-white" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-[#8B7355] to-[#A89B8C] opacity-0 transition-opacity group-hover:opacity-20" />
+                    </m.a>
+                  );
+                })}
+              </div>
+            </div>
           </m.div>
 
           {/* Quick Links */}
@@ -85,22 +119,24 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
+            className="lg:col-span-2"
           >
-            <h3 className="mb-6 text-lg font-bold">{t("quickLinks")}</h3>
+            <h3 className="mb-6 text-sm font-bold uppercase tracking-wider text-white">
+              {t("quickLinks")}
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
-                <m.li
-                  key={link.label}
-                  whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
+                <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-gray-400 transition-colors hover:text-white"
+                    className="group inline-flex items-center text-base text-gray-300 transition-colors hover:text-white"
                   >
-                    {link.label}
+                    <span className="relative">
+                      {link.label}
+                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                    </span>
                   </a>
-                </m.li>
+                </li>
               ))}
             </ul>
           </m.div>
@@ -111,25 +147,25 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
+            className="lg:col-span-2"
           >
-            <h3 className="mb-6 text-lg font-bold">{t("services")}</h3>
+            <h3 className="mb-6 text-sm font-bold uppercase tracking-wider text-white">
+              {t("services")}
+            </h3>
             <ul className="space-y-3">
-              {services.map((service) => {
-                return (
-                  <m.li
-                    key={service.label}
-                    whileHover={{ x: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
+              {services.map((service) => (
+                <li key={service.label}>
+                  <a
+                    href={service.href}
+                    className="group inline-flex items-center text-base text-gray-300 transition-colors hover:text-white"
                   >
-                    <a
-                      href={service.href}
-                      className="text-sm text-gray-400 transition-colors hover:text-white"
-                    >
+                    <span className="relative">
                       {service.label}
-                    </a>
-                  </m.li>
-                );
-              })}
+                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                    </span>
+                  </a>
+                </li>
+              ))}
             </ul>
           </m.div>
 
@@ -139,55 +175,59 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
+            className="lg:col-span-3"
           >
-            <h3 className="mb-6 text-lg font-bold">{t("contactUs")}</h3>
+            <h3 className="mb-6 text-sm font-bold uppercase tracking-wider text-white">
+              {t("contactUs")}
+            </h3>
             <div className="space-y-4">
               <a
                 href={`tel:${siteConfig.support.phone}`}
-                className="flex items-start gap-3 text-sm text-gray-400 transition-colors hover:text-white"
+                className="group flex items-start gap-3 transition-colors hover:text-white"
               >
-                <Phone className="mt-1 h-4 w-4 shrink-0" />
-                <span dir="ltr">{siteConfig.support.phone}</span>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10 transition-colors group-hover:bg-white/15">
+                  <Phone className="h-5 w-5 text-[#A89B8C]" />
+                </div>
+                <div>
+                  <div className="text-xs text-gray-400">الهاتف</div>
+                  <div
+                    className="text-sm text-gray-200 group-hover:text-white"
+                    dir="ltr"
+                  >
+                    {siteConfig.support.phone}
+                  </div>
+                </div>
               </a>
+
               <a
                 href={`mailto:${siteConfig.support.email}`}
-                className="flex items-start gap-3 text-sm text-gray-400 transition-colors hover:text-white"
+                className="group flex items-start gap-3 transition-colors hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Mail className="mt-1 h-4 w-4 shrink-0" />
-                <span>{siteConfig.support.email}</span>
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10 transition-colors group-hover:bg-white/15">
+                  <Mail className="h-5 w-5 text-[#A89B8C]" />
+                </div>
+                <div>
+                  <div className="text-xs text-gray-400">البريد الإلكتروني</div>
+                  <div className="text-sm text-gray-200 group-hover:text-white">
+                    {siteConfig.support.email}
+                  </div>
+                </div>
               </a>
-              <div className="flex items-start gap-3 text-sm text-gray-400">
-                <MapPin className="mt-1 h-4 w-4 shrink-0" />
-                <span>{t("saudiArabia")}</span>
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10">
+                  <MapPin className="h-5 w-5 text-[#A89B8C]" />
+                </div>
+                <div>
+                  <div className="text-xs text-gray-400">الموقع</div>
+                  <div className="text-sm text-gray-200">
+                    {t("saudiArabia")}
+                  </div>
+                </div>
               </div>
             </div>
-
-            {/* Social Links */}
-            {/* <div className="mt-6">
-              <div className="flex gap-3">
-                {socialLinks.map((social) => {
-                  const Icon = social.icon;
-                  return (
-                    <m.a
-                      key={social.label}
-                      href={social.href}
-                      target={social.target}
-                      rel="noopener noreferrer"
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-gray-400 transition-all hover:bg-white/20"
-                      aria-label={social.label}
-                      title={social.label}
-                      whileHover={{ scale: 1.1, y: -2 }}
-                      whileTap={{ scale: 0.95 }}
-                      transition={{ type: "spring", stiffness: 400 }}
-                    >
-                      <Icon className="h-5 w-5" />
-                    </m.a>
-                  );
-                })}
-              </div>
-            </div> */}
           </m.div>
         </div>
 
@@ -197,11 +237,13 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-12 border-t border-gray-800 pt-8 text-center"
+          className="mt-16 border-t border-white/10 pt-8"
         >
-          <p className="text-sm text-gray-400">
-            {t("copyright", { year: currentYear })}
-          </p>
+          <div className="text-center">
+            <p className="text-sm text-gray-400">
+              {t("copyright", { year: currentYear })}
+            </p>
+          </div>
         </m.div>
       </div>
     </footer>

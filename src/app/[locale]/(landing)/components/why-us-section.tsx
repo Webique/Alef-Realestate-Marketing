@@ -1,12 +1,12 @@
 "use client";
 
 import {
-    Award,
-    BarChart,
-    FileText,
-    Shield,
-    Sparkles,
-    Target
+  Award,
+  BarChart,
+  FileText,
+  Shield,
+  Sparkles,
+  Target
 } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";

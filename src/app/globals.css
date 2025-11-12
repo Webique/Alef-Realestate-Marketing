@@ -52,7 +52,7 @@
   --popover-foreground: #2C2C2C;
   --primary: #8B7355;
   --primary-foreground: #ffffff;
-  --secondary: #4A5D4F;
+  --secondary: #312D2C;
   --secondary-foreground: #ffffff;
   --muted: #E8E4DD;
   --muted-foreground: #6B6B6B;
@@ -86,7 +86,7 @@
   --popover-foreground: #F5F3EF;
   --primary: #A89B8C;
   --primary-foreground: #1A1A1A;
-  --secondary: #4A5D4F;
+  --secondary: #312D2C;
   --secondary-foreground: #F5F3EF;
   --muted: #3A3A3A;
   --muted-foreground: #B8B8B8;
@@ -259,6 +259,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Smooth scroll offset for fixed header */
+  html {
+    scroll-padding-top: 6rem;
+  }
+
+  /* Enhanced shadows */
+  .shadow-elegant {
+    box-shadow: 0 10px 40px -10px rgba(139, 115, 85, 0.2);
+  }
+
+  /* Decorative patterns */
+  .pattern-dots {
+    background-image: radial-gradient(circle, rgba(139, 115, 85, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .pattern-grid {
+    background-image:
+      linear-gradient(rgba(139, 115, 85, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(139, 115, 85, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
 

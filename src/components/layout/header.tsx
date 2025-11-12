@@ -1,6 +1,5 @@
 "use client";
 
-import { useHeadroom } from "@mantine/hooks";
 import { Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
@@ -16,7 +15,6 @@ import { cn } from "@/lib/utils";
 export default function Header() {
   const t = useTranslations("Header");
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const pinned = useHeadroom({ fixedAt: 120 });
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -28,13 +26,7 @@ export default function Header() {
   ];
 
   return (
-    <m.header
-      className="border-border/50 bg-background/60 fixed inset-x-0 top-0 z-50 shadow-sm backdrop-blur-md"
-      animate={{
-        transform: pinned ? "translateY(0)" : "translateY(-100%)"
-      }}
-      transition={{ duration: 0.3, ease: "easeInOut" }}
-    >
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/50 bg-white/80 shadow-sm backdrop-blur-md">
       {/* Main Header */}
       <div className="layout">
         <div className="flex h-16 items-center justify-between lg:h-20">
@@ -193,6 +185,6 @@ export default function Header() {
           </nav>
         </m.div>
       </div>
-    </m.header>
+    </header>
   );
 }

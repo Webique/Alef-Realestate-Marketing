@@ -175,11 +175,17 @@
     "quickLinks": "Quick Links",
     "services": "Our Services",
     "contactUs": "Contact Us",
+    "connectWithUs": "Connect With Us",
     "copyright": "© {year} ALEF Real Estate. All rights reserved",
     "companyDescription": "Alef Real Estate is a Saudi company specialized in marketing residential projects, building trust through professional strategies.",
     "marketing": "Real Estate Marketing",
     "development": "Project Development",
     "consulting": "Expert Consulting",
-    "saudiArabia": "Kingdom of Saudi Arabia"
+    "saudiArabia": "Kingdom of Saudi Arabia",
+    "socialMedia": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "email": "Email"
+    }
   }
 }
