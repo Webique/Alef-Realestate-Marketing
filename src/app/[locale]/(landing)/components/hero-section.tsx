@@ -12,7 +12,24 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage.Hero");
 
   return (
-    <section className="from-primary/5 via-primary/10 to-primary/20 relative w-full bg-gradient-to-br py-20 lg:h-screen lg:py-24 2xl:h-[780px]">
+    <section className="from-primary/3 via-primary/8 to-primary/20 relative w-full bg-gradient-to-b py-20 lg:h-screen lg:py-24 2xl:h-[780px]">
+      {/* Diagonal Curved Line SVG */}
+      <svg
+        className="pointer-events-none absolute inset-0 h-full w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        viewBox="0 0 100 100"
+      >
+        <path
+          d="M 0 80 Q 30 40, 50 45 T 100 20"
+          stroke="currentColor"
+          strokeWidth="55"
+          fill="none"
+          className="text-primary/5"
+          vectorEffect="non-scaling-stroke"
+        />
+      </svg>
+
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto max-w-7xl">
           {/* Top Subtitle */}
