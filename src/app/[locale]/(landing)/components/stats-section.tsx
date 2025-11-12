@@ -12,19 +12,19 @@ export default function StatsSection() {
       icon: TrendingUp,
       value: t("sales.value"),
       label: t("sales.label"),
-      gradient: "from-[#8B7355] to-[#A89B8C]"
+      gradient: "from-primary to-accent"
     },
     {
       icon: Zap,
       value: t("acceleration.value"),
       label: t("acceleration.label"),
-      gradient: "from-[#4A5D4F] to-[#6B8E7D]"
+      gradient: "from-primary to-accent"
     },
     {
       icon: Users,
       value: t("referrals.value"),
       label: t("referrals.label"),
-      gradient: "from-[#A89B8C] to-[#C4B5A0]"
+      gradient: "from-accent to-accent/80"
     }
   ];
 

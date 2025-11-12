@@ -62,8 +62,8 @@ const Footer = () => {
 
       {/* Decorative Gradient Orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -start-40 top-0 h-96 w-96 rounded-full bg-[#8B7355]/10 blur-[120px]" />
-        <div className="absolute -end-40 bottom-0 h-96 w-96 rounded-full bg-[#A89B8C]/10 blur-[120px]" />
+        <div className="bg-primary/10 absolute -start-40 top-0 h-96 w-96 rounded-full blur-[120px]" />
+        <div className="bg-accent/10 absolute -end-40 bottom-0 h-96 w-96 rounded-full blur-[120px]" />
       </div>
 
       <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -105,7 +105,7 @@ const Footer = () => {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Icon className="relative z-10 h-5 w-5 text-gray-300 transition-colors group-hover:text-white" />
-                      <div className="absolute inset-0 bg-gradient-to-br from-[#8B7355] to-[#A89B8C] opacity-0 transition-opacity group-hover:opacity-20" />
+                      <div className="from-primary to-accent absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity group-hover:opacity-20" />
                     </m.a>
                   );
                 })}
@@ -133,7 +133,7 @@ const Footer = () => {
                   >
                     <span className="relative">
                       {link.label}
-                      <span className="absolute -bottom-1 start-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                      <span className="bg-primary absolute -bottom-1 start-0 h-px w-0 transition-all group-hover:w-full" />
                     </span>
                   </a>
                 </li>
@@ -161,7 +161,7 @@ const Footer = () => {
                   >
                     <span className="relative">
                       {service.label}
-                      <span className="absolute -bottom-1 start-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                      <span className="bg-primary absolute -bottom-1 start-0 h-px w-0 transition-all group-hover:w-full" />
                     </span>
                   </a>
                 </li>
@@ -186,7 +186,7 @@ const Footer = () => {
                 className="group flex items-start gap-3 transition-colors hover:text-white"
               >
                 <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10 transition-colors group-hover:bg-white/15">
-                  <Phone className="h-5 w-5 text-[#A89B8C]" />
+                  <Phone className="text-accent h-5 w-5" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-300">{t("phone")}</div>
@@ -206,7 +206,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10 transition-colors group-hover:bg-white/15">
-                  <Mail className="h-5 w-5 text-[#A89B8C]" />
+                  <Mail className="text-accent h-5 w-5" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-300">{t("email")}</div>
@@ -218,7 +218,7 @@ const Footer = () => {
 
               <div className="flex items-start gap-3">
                 <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-white/10">
-                  <MapPin className="h-5 w-5 text-[#A89B8C]" />
+                  <MapPin className="text-accent h-5 w-5" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-300">{t("location")}</div>

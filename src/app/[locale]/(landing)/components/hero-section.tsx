@@ -12,10 +12,10 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage.Hero");
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-[#F5F3EF]">
+    <section className="bg-background relative min-h-screen w-full overflow-hidden">
       {/* Decorative Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_#8B7355_1px,_transparent_1px)] bg-[length:40px_40px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_hsl(var(--primary))_1px,_transparent_1px)] bg-[length:40px_40px]" />
       </div>
 
       {/* Gradient Orbs */}
@@ -30,7 +30,7 @@ export default function HeroSection() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute -start-20 top-20 h-96 w-96 rounded-full bg-[#8B7355] blur-[120px]"
+          className="bg-primary absolute -start-20 top-20 h-96 w-96 rounded-full blur-[120px]"
         />
         <m.div
           animate={{
@@ -43,7 +43,7 @@ export default function HeroSection() {
             ease: "easeInOut",
             delay: 2
           }}
-          className="absolute -end-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C] blur-[120px]"
+          className="bg-accent absolute -end-20 bottom-20 h-96 w-96 rounded-full blur-[120px]"
         />
       </div>
 
@@ -64,10 +64,10 @@ export default function HeroSection() {
               className="mb-6 inline-flex"
             >
               <div className="group relative">
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#8B7355] to-[#A89B8C] opacity-20 blur transition duration-300 group-hover:opacity-30" />
-                <div className="relative flex items-center gap-2 rounded-full border border-[#8B7355]/30 bg-white px-5 py-2.5 shadow-sm">
-                  <Building2 className="h-4 w-4 text-[#8B7355]" />
-                  <span className="text-sm font-semibold text-[#8B7355]">
+                <div className="from-primary to-accent absolute -inset-1 rounded-full bg-gradient-to-r opacity-20 blur transition duration-300 group-hover:opacity-30" />
+                <div className="border-primary/30 relative flex items-center gap-2 rounded-full border bg-white px-5 py-2.5 shadow-sm">
+                  <Building2 className="text-primary h-4 w-4" />
+                  <span className="text-primary text-sm font-semibold">
                     {t("subtitle")}
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="mb-6 text-5xl font-bold leading-tight text-[#2C2C2C] sm:text-6xl lg:text-7xl"
+              className="text-secondary mb-6 text-5xl font-bold leading-tight sm:text-6xl lg:text-7xl"
             >
               {t("title")}
             </m.h1>
@@ -89,7 +89,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="mb-4 text-lg font-medium text-[#8B7355] sm:text-xl"
+              className="text-primary mb-4 text-lg font-medium sm:text-xl"
             >
               {t("subtitle")}
             </m.p>
@@ -112,7 +112,7 @@ export default function HeroSection() {
               className="flex flex-col gap-4 sm:flex-row"
             >
               <Button
-                className="group h-auto rounded-full bg-[#2C2C2C] px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-[#1A1A1A] hover:shadow-xl"
+                className="bg-secondary hover:bg-secondary/90 group h-auto rounded-full px-8 py-4 text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl"
                 asChild
               >
                 <a
@@ -126,7 +126,7 @@ export default function HeroSection() {
               </Button>
 
               <Button
-                className="h-auto rounded-full border-2 border-[#2C2C2C] bg-transparent px-8 py-4 text-base font-semibold text-[#2C2C2C] transition-all hover:bg-[#2C2C2C] hover:text-white"
+                className="border-secondary text-secondary hover:bg-secondary h-auto rounded-full border-2 bg-transparent px-8 py-4 text-base font-semibold transition-all hover:text-white"
                 asChild
               >
                 <a href="#about">{t("learnMore")}</a>
@@ -140,14 +140,14 @@ export default function HeroSection() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="mt-10 flex flex-wrap gap-3"
             >
-              <div className="flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-white px-4 py-2 shadow-sm">
-                <Home className="h-4 w-4 text-[#8B7355]" />
+              <div className="border-primary/20 flex items-center gap-2 rounded-full border bg-white px-4 py-2 shadow-sm">
+                <Home className="text-primary h-4 w-4" />
                 <span className="text-sm font-medium text-gray-700">
                   احترافية عالية
                 </span>
               </div>
-              <div className="flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-white px-4 py-2 shadow-sm">
-                <Sparkles className="h-4 w-4 text-[#8B7355]" />
+              <div className="border-primary/20 flex items-center gap-2 rounded-full border bg-white px-4 py-2 shadow-sm">
+                <Sparkles className="text-primary h-4 w-4" />
                 <span className="text-sm font-medium text-gray-700">
                   نتائج مضمونة
                 </span>
@@ -164,8 +164,8 @@ export default function HeroSection() {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -start-6 -top-6 h-32 w-32 rounded-3xl bg-[#8B7355]/10" />
-              <div className="absolute -bottom-6 -end-6 h-32 w-32 rounded-3xl bg-[#A89B8C]/10" />
+              <div className="bg-primary/10 absolute -start-6 -top-6 h-32 w-32 rounded-3xl" />
+              <div className="bg-accent/10 absolute -bottom-6 -end-6 h-32 w-32 rounded-3xl" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -187,11 +187,11 @@ export default function HeroSection() {
                 className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#8B7355]">
+                  <div className="bg-primary flex h-12 w-12 items-center justify-center rounded-full">
                     <Building2 className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-[#2C2C2C]">35+</div>
+                    <div className="text-secondary text-2xl font-bold">35+</div>
                     <div className="text-sm text-gray-600">
                       مليون ريال مبيعات
                     </div>
@@ -212,7 +212,7 @@ export default function HeroSection() {
       >
         <m.a
           href="#about"
-          className="flex flex-col items-center gap-2 text-gray-600 transition-colors hover:text-[#8B7355]"
+          className="hover:text-primary flex flex-col items-center gap-2 text-gray-600 transition-colors"
         >
           <m.span
             animate={{ opacity: [0.5, 1, 0.5] }}
@@ -234,7 +234,7 @@ export default function HeroSection() {
             }}
             className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-gray-300 p-1"
           >
-            <m.div className="h-2 w-2 rounded-full bg-[#8B7355]" />
+            <m.div className="bg-primary h-2 w-2 rounded-full" />
           </m.div>
         </m.a>
       </m.div>

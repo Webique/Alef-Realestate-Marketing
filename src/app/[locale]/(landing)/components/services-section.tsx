@@ -42,7 +42,7 @@ export default function ServicesSection() {
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8B7355_1px,transparent_1px),linear-gradient(to_bottom,#8B7355_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--primary))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--primary))_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -53,9 +53,9 @@ export default function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-16 max-w-3xl text-center"
         >
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-[#8B7355]/5 px-4 py-2">
-            <Building className="h-4 w-4 text-[#8B7355]" />
-            <span className="text-sm font-semibold text-[#8B7355]">
+          <div className="border-primary/20 bg-primary/5 mb-4 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+            <Building className="text-primary h-4 w-4" />
+            <span className="text-primary text-sm font-semibold">
               {t("badge")}
             </span>
           </div>
@@ -77,8 +77,8 @@ export default function ServicesSection() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="group"
             >
-              <div className="flex h-full items-start gap-3 rounded-xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:border-[#8B7355]/30 hover:shadow-lg">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-[#8B7355] to-[#A89B8C]">
+              <div className="hover:border-primary/30 flex h-full items-start gap-3 rounded-xl border border-gray-200 bg-white p-5 transition-all duration-300 hover:shadow-lg">
+                <div className="from-primary to-accent flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br">
                   <service.icon className="h-5 w-5 text-white" />
                 </div>
                 <p className="pt-1 text-sm font-medium leading-relaxed text-gray-700">

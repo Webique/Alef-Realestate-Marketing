@@ -19,8 +19,8 @@ export default function ExecutionSection() {
     <section className="relative overflow-hidden bg-white py-20 lg:py-32">
       {/* Decorative Background */}
       <div className="absolute inset-0">
-        <div className="absolute end-0 top-0 h-96 w-96 rounded-full bg-[#8B7355]/5 blur-3xl" />
-        <div className="absolute bottom-0 start-0 h-96 w-96 rounded-full bg-[#A89B8C]/5 blur-3xl" />
+        <div className="bg-primary/5 absolute end-0 top-0 h-96 w-96 rounded-full blur-3xl" />
+        <div className="bg-accent/5 absolute bottom-0 start-0 h-96 w-96 rounded-full blur-3xl" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -32,9 +32,9 @@ export default function ExecutionSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-[#8B7355]/5 px-4 py-2">
-              <Handshake className="h-4 w-4 text-[#8B7355]" />
-              <span className="text-sm font-semibold text-[#8B7355]">
+            <div className="border-primary/20 bg-primary/5 mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+              <Handshake className="text-primary h-4 w-4" />
+              <span className="text-primary text-sm font-semibold">
                 {t("badge")}
               </span>
             </div>
@@ -53,7 +53,7 @@ export default function ExecutionSection() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="flex items-start gap-4"
                 >
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#8B7355] to-[#A89B8C] shadow-lg">
+                  <div className="from-primary to-accent flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br shadow-lg">
                     <feature.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="pt-2">
@@ -73,18 +73,14 @@ export default function ExecutionSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="mt-10 grid grid-cols-2 gap-4"
             >
-              <div className="rounded-2xl border border-[#8B7355]/20 bg-gradient-to-br from-[#8B7355]/5 to-transparent p-6">
-                <div className="mb-2 text-3xl font-bold text-[#8B7355]">
-                  100%
-                </div>
+              <div className="border-primary/20 from-primary/5 rounded-2xl border bg-gradient-to-br to-transparent p-6">
+                <div className="text-primary mb-2 text-3xl font-bold">100%</div>
                 <div className="text-sm font-medium text-gray-600">
                   رضا العملاء
                 </div>
               </div>
-              <div className="rounded-2xl border border-[#8B7355]/20 bg-gradient-to-br from-[#A89B8C]/5 to-transparent p-6">
-                <div className="mb-2 text-3xl font-bold text-[#8B7355]">
-                  24/7
-                </div>
+              <div className="border-primary/20 from-accent/5 rounded-2xl border bg-gradient-to-br to-transparent p-6">
+                <div className="text-primary mb-2 text-3xl font-bold">24/7</div>
                 <div className="text-sm font-medium text-gray-600">
                   دعم متواصل
                 </div>
@@ -102,7 +98,7 @@ export default function ExecutionSection() {
           >
             <div className="relative">
               {/* Decorative Grid */}
-              <div className="absolute -start-6 -top-6 h-full w-full rounded-3xl border-2 border-[#8B7355]/20" />
+              <div className="border-primary/20 absolute -start-6 -top-6 h-full w-full rounded-3xl border-2" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -124,14 +120,14 @@ export default function ExecutionSection() {
                 className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#8B7355] to-[#A89B8C]">
+                  <div className="from-primary to-accent flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br">
                     <CheckCircle2 className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <div className="text-sm font-medium text-gray-600">
                       صفقات منجزة
                     </div>
-                    <div className="text-2xl font-bold text-[#2C2C2C]">
+                    <div className="text-secondary text-2xl font-bold">
                       500+
                     </div>
                   </div>

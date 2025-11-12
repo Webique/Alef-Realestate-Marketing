@@ -28,7 +28,7 @@ export default function SpeedSection() {
     <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20 lg:py-32">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8B7355_1px,transparent_1px),linear-gradient(to_bottom,#8B7355_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--primary))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--primary))_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -43,8 +43,8 @@ export default function SpeedSection() {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -end-6 -top-6 h-40 w-40 rounded-3xl bg-[#8B7355]/10" />
-              <div className="absolute -bottom-6 -start-6 h-40 w-40 rounded-3xl bg-[#A89B8C]/10" />
+              <div className="bg-primary/10 absolute -end-6 -top-6 h-40 w-40 rounded-3xl" />
+              <div className="bg-accent/10 absolute -bottom-6 -start-6 h-40 w-40 rounded-3xl" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -66,7 +66,7 @@ export default function SpeedSection() {
                 className="absolute -end-6 top-1/2 -translate-y-1/2 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="text-center">
-                  <div className="mb-2 text-4xl font-bold text-[#8B7355]">
+                  <div className="text-primary mb-2 text-4xl font-bold">
                     60%
                   </div>
                   <div className="text-sm font-medium text-gray-600">
@@ -84,9 +84,9 @@ export default function SpeedSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-[#8B7355]/5 px-4 py-2">
-              <TrendingUp className="h-4 w-4 text-[#8B7355]" />
-              <span className="text-sm font-semibold text-[#8B7355]">
+            <div className="border-primary/20 bg-primary/5 mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+              <TrendingUp className="text-primary h-4 w-4" />
+              <span className="text-primary text-sm font-semibold">
                 {t("badge")}
               </span>
             </div>
@@ -103,10 +103,10 @@ export default function SpeedSection() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="group flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-4 transition-all hover:border-[#8B7355]/30 hover:shadow-md"
+                  className="hover:border-primary/30 group flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-4 transition-all hover:shadow-md"
                 >
-                  <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-[#8B7355]/10 transition-colors group-hover:bg-[#8B7355]/20">
-                    <feature.icon className="h-5 w-5 text-[#8B7355]" />
+                  <div className="bg-primary/10 group-hover:bg-primary/20 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg transition-colors">
+                    <feature.icon className="text-primary h-5 w-5" />
                   </div>
                   <p className="pt-1.5 text-base font-medium text-gray-700">
                     {feature.text}

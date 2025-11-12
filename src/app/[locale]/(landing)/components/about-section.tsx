@@ -23,7 +23,7 @@ export default function AboutSection() {
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.02]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_#8B7355_1px,_transparent_1px)] bg-[length:40px_40px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_hsl(var(--primary))_1px,_transparent_1px)] bg-[length:40px_40px]" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -34,9 +34,9 @@ export default function AboutSection() {
           transition={{ duration: 0.6 }}
           className="mx-auto mb-16 max-w-4xl text-center"
         >
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#8B7355]/20 bg-[#8B7355]/5 px-4 py-2">
-            <Building2 className="h-4 w-4 text-[#8B7355]" />
-            <span className="text-sm font-semibold text-[#8B7355]">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
+            <Building2 className="h-4 w-4 text-primary" />
+            <span className="text-sm font-semibold text-primary">
               {t("badge")}
             </span>
           </div>
@@ -59,9 +59,9 @@ export default function AboutSection() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#8B7355]/20 to-[#A89B8C]/10 opacity-0 blur transition duration-300 group-hover:opacity-100" />
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary/20 to-accent/10 opacity-0 blur transition duration-300 group-hover:opacity-100" />
                 <div className="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow duration-300 group-hover:shadow-lg">
-                  <stat.icon className="mx-auto mb-4 h-10 w-10 text-[#8B7355]" />
+                  <stat.icon className="mx-auto mb-4 h-10 w-10 text-primary" />
                   <div className="mb-2 text-4xl font-bold text-gray-900">
                     <AnimatedCounter end={stat.value} />
                     <span>+</span>

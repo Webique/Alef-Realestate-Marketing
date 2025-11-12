@@ -13,7 +13,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-gradient-to-br from-[#2C2C2C] to-[#1A1A1A] py-20 lg:py-32"
+      className="from-secondary to-secondary/80 relative overflow-hidden bg-gradient-to-br py-20 lg:py-32"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -22,8 +22,8 @@ export default function ContactSection() {
 
       {/* Decorative Blobs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -start-20 top-20 h-96 w-96 rounded-full bg-[#8B7355]/20 blur-[120px]" />
-        <div className="absolute -end-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C]/20 blur-[120px]" />
+        <div className="bg-primary/20 absolute -start-20 top-20 h-96 w-96 rounded-full blur-[120px]" />
+        <div className="bg-accent/20 absolute -end-20 bottom-20 h-96 w-96 rounded-full blur-[120px]" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -120,7 +120,7 @@ export default function ContactSection() {
                 className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white p-6 shadow-xl"
               >
                 <div className="text-center">
-                  <div className="mb-2 text-3xl font-bold text-[#8B7355]">
+                  <div className="text-primary mb-2 text-3xl font-bold">
                     24/7
                   </div>
                   <div className="text-sm font-medium text-gray-600">
