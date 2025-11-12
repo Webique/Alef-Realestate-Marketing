@@ -19,8 +19,8 @@ export default function ExecutionSection() {
     <section className="relative overflow-hidden bg-white py-20 lg:py-32">
       {/* Decorative Background */}
       <div className="absolute inset-0">
-        <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-[#8B7355]/5 blur-3xl" />
-        <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-[#A89B8C]/5 blur-3xl" />
+        <div className="absolute end-0 top-0 h-96 w-96 rounded-full bg-[#8B7355]/5 blur-3xl" />
+        <div className="absolute bottom-0 start-0 h-96 w-96 rounded-full bg-[#A89B8C]/5 blur-3xl" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -102,7 +102,7 @@ export default function ExecutionSection() {
           >
             <div className="relative">
               {/* Decorative Grid */}
-              <div className="absolute -left-6 -top-6 h-full w-full rounded-3xl border-2 border-[#8B7355]/20" />
+              <div className="absolute -start-6 -top-6 h-full w-full rounded-3xl border-2 border-[#8B7355]/20" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -121,7 +121,7 @@ export default function ExecutionSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="absolute -bottom-6 -left-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
+                className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-[#8B7355] to-[#A89B8C]">

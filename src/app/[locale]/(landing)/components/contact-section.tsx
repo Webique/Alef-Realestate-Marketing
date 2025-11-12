@@ -1,11 +1,10 @@
 "use client";
 
-import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
-import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 
 export default function ContactSection() {
@@ -23,13 +22,13 @@ export default function ContactSection() {
 
       {/* Decorative Blobs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-20 top-20 h-96 w-96 rounded-full bg-[#8B7355]/20 blur-[120px]" />
-        <div className="absolute -right-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C]/20 blur-[120px]" />
+        <div className="absolute -start-20 top-20 h-96 w-96 rounded-full bg-[#8B7355]/20 blur-[120px]" />
+        <div className="absolute -end-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C]/20 blur-[120px]" />
       </div>
 
       <div className="container relative mx-auto px-4 sm:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left - Content */}
+          {/* Start - Content */}
           <m.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -58,8 +57,10 @@ export default function ContactSection() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-white/60">اتصل بنا</div>
-                  <div className="font-semibold">+966 XX XXX XXXX</div>
+                  <div className="text-sm text-white/60">{t("callUs")}</div>
+                  <div dir="ltr" className="font-semibold">
+                    {siteConfig.support.phone}
+                  </div>
                 </div>
               </div>
 
@@ -68,8 +69,10 @@ export default function ContactSection() {
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-white/60">البريد الإلكتروني</div>
-                  <div className="font-semibold">info@alefrealestate.com</div>
+                  <div className="text-sm text-white/60">{t("email")}</div>
+                  <div className="font-semibold">
+                    {siteConfig.support.email}
+                  </div>
                 </div>
               </div>
 
@@ -78,28 +81,14 @@ export default function ContactSection() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="text-sm text-white/60">الموقع</div>
-                  <div className="font-semibold">المملكة العربية السعودية</div>
+                  <div className="text-sm text-white/60">{t("location")}</div>
+                  <div className="font-semibold">{t("saudiArabia")}</div>
                 </div>
               </div>
             </div>
-
-            <Button
-              className="group h-auto rounded-full bg-white px-10 py-4 text-lg font-bold text-[#2C2C2C] shadow-2xl transition-all hover:bg-white/90"
-              asChild
-            >
-              <a
-                href={siteConfig.links.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                تواصل معنا عبر واتساب
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1 rtl:ml-0 rtl:mr-2 rtl:rotate-180 rtl:group-hover:-translate-x-1" />
-              </a>
-            </Button>
           </m.div>
 
-          {/* Right - Image */}
+          {/* End - Image */}
           <m.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -109,7 +98,7 @@ export default function ContactSection() {
           >
             <div className="relative">
               {/* Decorative Frame */}
-              <div className="absolute -right-6 -top-6 h-full w-full rounded-3xl border-2 border-white/20" />
+              <div className="absolute -end-6 -top-6 h-full w-full rounded-3xl border-2 border-white/20" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -128,14 +117,14 @@ export default function ContactSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="absolute -bottom-6 -left-6 rounded-2xl border border-white/20 bg-white p-6 shadow-xl"
+                className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white p-6 shadow-xl"
               >
                 <div className="text-center">
                   <div className="mb-2 text-3xl font-bold text-[#8B7355]">
                     24/7
                   </div>
                   <div className="text-sm font-medium text-gray-600">
-                    متاحون دائماً
+                    {t("available")}
                   </div>
                 </div>
               </m.div>

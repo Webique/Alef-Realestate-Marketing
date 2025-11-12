@@ -43,8 +43,8 @@ export default function SpeedSection() {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -right-6 -top-6 h-40 w-40 rounded-3xl bg-[#8B7355]/10" />
-              <div className="absolute -bottom-6 -left-6 h-40 w-40 rounded-3xl bg-[#A89B8C]/10" />
+              <div className="absolute -end-6 -top-6 h-40 w-40 rounded-3xl bg-[#8B7355]/10" />
+              <div className="absolute -bottom-6 -start-6 h-40 w-40 rounded-3xl bg-[#A89B8C]/10" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -63,7 +63,7 @@ export default function SpeedSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="absolute -right-6 top-1/2 -translate-y-1/2 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
+                className="absolute -end-6 top-1/2 -translate-y-1/2 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="text-center">
                   <div className="mb-2 text-4xl font-bold text-[#8B7355]">

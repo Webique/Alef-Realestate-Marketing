@@ -30,7 +30,7 @@ export default function HeroSection() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute -left-20 top-20 h-96 w-96 rounded-full bg-[#8B7355] blur-[120px]"
+          className="absolute -start-20 top-20 h-96 w-96 rounded-full bg-[#8B7355] blur-[120px]"
         />
         <m.div
           animate={{
@@ -43,7 +43,7 @@ export default function HeroSection() {
             ease: "easeInOut",
             delay: 2
           }}
-          className="absolute -right-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C] blur-[120px]"
+          className="absolute -end-20 bottom-20 h-96 w-96 rounded-full bg-[#A89B8C] blur-[120px]"
         />
       </div>
 
@@ -164,8 +164,8 @@ export default function HeroSection() {
           >
             <div className="relative">
               {/* Decorative Elements */}
-              <div className="absolute -left-6 -top-6 h-32 w-32 rounded-3xl bg-[#8B7355]/10" />
-              <div className="absolute -bottom-6 -right-6 h-32 w-32 rounded-3xl bg-[#A89B8C]/10" />
+              <div className="absolute -start-6 -top-6 h-32 w-32 rounded-3xl bg-[#8B7355]/10" />
+              <div className="absolute -bottom-6 -end-6 h-32 w-32 rounded-3xl bg-[#A89B8C]/10" />
 
               {/* Main Image */}
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
@@ -184,7 +184,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.6 }}
-                className="absolute -bottom-6 -left-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
+                className="absolute -bottom-6 -start-6 rounded-2xl border border-white/20 bg-white/95 p-6 shadow-xl backdrop-blur-sm"
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#8B7355]">
@@ -208,7 +208,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2"
+        className="absolute bottom-8 start-1/2 z-20 -translate-x-1/2"
       >
         <m.a
           href="#about"

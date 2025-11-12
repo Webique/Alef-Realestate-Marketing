@@ -121,7 +121,12 @@
     "Contact": {
       "badge": "Get In Touch",
       "title": "Start Your Partnership Today",
-      "description": "Contact us to discuss your real estate project and how we can help you achieve success"
+      "description": "Contact us to discuss your real estate project and how we can help you achieve success",
+      "callUs": "Call Us",
+      "email": "Email",
+      "location": "Location",
+      "saudiArabia": "Kingdom of Saudi Arabia",
+      "available": "Always Available"
     }
   },
   "Error": {

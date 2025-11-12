@@ -62,8 +62,8 @@ const Footer = () => {
 
       {/* Decorative Gradient Orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -left-40 top-0 h-96 w-96 rounded-full bg-[#8B7355]/10 blur-[120px]" />
-        <div className="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-[#A89B8C]/10 blur-[120px]" />
+        <div className="absolute -start-40 top-0 h-96 w-96 rounded-full bg-[#8B7355]/10 blur-[120px]" />
+        <div className="absolute -end-40 bottom-0 h-96 w-96 rounded-full bg-[#A89B8C]/10 blur-[120px]" />
       </div>
 
       <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
@@ -133,7 +133,7 @@ const Footer = () => {
                   >
                     <span className="relative">
                       {link.label}
-                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                      <span className="absolute -bottom-1 start-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
                     </span>
                   </a>
                 </li>
@@ -161,7 +161,7 @@ const Footer = () => {
                   >
                     <span className="relative">
                       {service.label}
-                      <span className="absolute -bottom-1 left-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
+                      <span className="absolute -bottom-1 start-0 h-px w-0 bg-[#8B7355] transition-all group-hover:w-full" />
                     </span>
                   </a>
                 </li>

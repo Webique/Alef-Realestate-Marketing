@@ -22,8 +22,8 @@ export default function PartnersSection() {
 
           <div className="relative">
             {/* Gradient Overlays */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-20 bg-gradient-to-r from-white to-transparent" />
-            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-20 bg-gradient-to-l from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 start-0 z-10 w-20 bg-gradient-to-r from-white to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 end-0 z-10 w-20 bg-gradient-to-l from-white to-transparent" />
 
             {/* Logos Grid */}
             <div className="grid grid-cols-3 items-center gap-8 md:grid-cols-6 md:gap-12">
