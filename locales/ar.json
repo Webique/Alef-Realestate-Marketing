@@ -132,11 +132,11 @@
       "model": "ويكون المقابل المالي هو نسبة من إجمالي قيمة المبيعات المحققة فعلياً، بما يضمن للمطور نتائج ملموسة وتكلفة عادلة مبنية على الأداء والإنجاز، وليس على الجهد فقط، مما يجعل النموذج أكثر كفاءة وشفافية وربحية للطرفين.",
       "features": {
         "noUpfront": "لا تكاليف مسبقة",
-        "noUpfrontEn": "Zero Upfront Costs",
+        "noUpfrontDesc": "نتحمل كافة التكاليف التسويقية",
         "percentage": "نسبة من المبيعات",
-        "percentageEn": "Competitive %",
+        "percentageDesc": "مقابل مالي عادل مبني على الأداء",
         "partnership": "شراكة حقيقية",
-        "partnershipEn": "True Partnership"
+        "partnershipDesc": "نجاحكم هو نجاحنا"
       }
     },
     "Contact": {

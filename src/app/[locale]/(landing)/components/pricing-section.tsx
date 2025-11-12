@@ -53,7 +53,7 @@ export default function PricingSection() {
                   {t("features.noUpfront")}
                 </div>
                 <div className="mt-1 text-xs text-gray-600">
-                  {t("features.noUpfrontEn")}
+                  {t("features.noUpfrontDesc")}
                 </div>
               </div>
               <div className="border-primary/20 bg-primary/5 rounded-xl border p-4 text-center">
@@ -61,7 +61,7 @@ export default function PricingSection() {
                   {t("features.percentage")}
                 </div>
                 <div className="mt-1 text-xs text-gray-600">
-                  {t("features.percentageEn")}
+                  {t("features.percentageDesc")}
                 </div>
               </div>
               <div className="border-primary/20 bg-primary/5 rounded-xl border p-4 text-center">
@@ -69,7 +69,7 @@ export default function PricingSection() {
                   {t("features.partnership")}
                 </div>
                 <div className="mt-1 text-xs text-gray-600">
-                  {t("features.partnershipEn")}
+                  {t("features.partnershipDesc")}
                 </div>
               </div>
             </div>

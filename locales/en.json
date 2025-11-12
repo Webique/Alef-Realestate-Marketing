@@ -132,11 +132,11 @@
       "model": "The financial consideration is a percentage of the total value of actual sales achieved, ensuring tangible results for the developer and fair costs based on performance and achievement, not just effort, making the model more efficient, transparent, and profitable for both parties.",
       "features": {
         "noUpfront": "Zero Upfront Costs",
-        "noUpfrontEn": "No Initial Investment",
+        "noUpfrontDesc": "We bear all marketing expenses",
         "percentage": "% of Sales",
-        "percentageEn": "Performance Based",
+        "percentageDesc": "Fair compensation based on performance",
         "partnership": "True Partnership",
-        "partnershipEn": "Win-Win Model"
+        "partnershipDesc": "Your success is our success"
       }
     },
     "Contact": {
