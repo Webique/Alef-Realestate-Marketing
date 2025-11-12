@@ -12,7 +12,7 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage.Hero");
 
   return (
-    <section className="from-primary/5 via-primary/10 to-primary/20 relative min-h-[780px] w-full bg-gradient-to-br py-20 lg:h-screen lg:py-24 2xl:h-[780px]">
+    <section className="from-primary/5 via-primary/10 to-primary/20 relative w-full bg-gradient-to-br py-20 lg:h-screen lg:py-24 2xl:h-[780px]">
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative mx-auto max-w-7xl">
           {/* Top Subtitle */}
