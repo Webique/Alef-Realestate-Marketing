@@ -10,6 +10,7 @@ import ExecutionSection from "./components/execution-section";
 import PricingSection from "./components/pricing-section";
 import ServicesSection from "./components/services-section";
 import SpeedSection from "./components/speed-section";
+import StatsSection from "./components/stats-section";
 import WhyUsSection from "./components/why-us-section";
 
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
@@ -22,7 +23,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
     <main>
       {/* <HeroSection /> */}
       {/* <AboutSection /> */}
-      {/* <StatsSection /> */}
+      <StatsSection />
       <WhyUsSection />
       <SpeedSection />
       <ExecutionSection />
