@@ -1,0 +1,82 @@
+{
+  "IndexPage": {
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
+    },
+    "Hero": {
+      "title": "Anan Real Estate Solutions",
+      "subtitle": "Your Trusted Partner in Real Estate Brokerage Solutions",
+      "description": "Innovating more real estate consulting solutions to enable Saudi families to own suitable housing for their needs",
+      "cta": "Request Service Now",
+      "learnMore": "Learn More",
+      "scrollText": "Discover More"
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try <retry>reloading the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Sorry, please check the address bar in your browser or use the navigation to go to a known page.",
+    "retryButton": "Try again",
+    "contactSupport": "Contact support",
+    "goBack": "Go back",
+    "backToHome": "Back to home"
+  },
+  "LocaleLayout": {
+    "name": "Anan Real Estate Solutions | Your Trusted Partner in Real Estate Brokerage Solutions",
+    "short_name": "Anan Real Estate Solutions",
+    "description": "Anan Real Estate Solutions is one of the pioneering companies providing solutions for all segments of society since 2020. We specialize in advisory services and Sharia-compliant real estate solutions, including property purchase, property mortgage, land and loan, construction completion, self-construction, and commercial financing. Our goal is to innovate more real estate consulting solutions to enable Saudi families to own suitable housing and enhance their financial capabilities.",
+    "keywords": [
+      "Anan Real Estate Solutions",
+      "Real Estate Brokerage Solutions",
+      "Real Estate Financing",
+      "Property Purchase",
+      "Property Mortgage",
+      "Land and Loan",
+      "Construction Completion",
+      "Self-Construction",
+      "Commercial Financing",
+      "Real Estate Consulting",
+      "Subsidized Financing",
+      "Refinancing",
+      "Mortgage Release",
+      "Off-Plan Sales",
+      "Real Estate Marketing",
+      "Property Management",
+      "Sharia-Compliant Solutions",
+      "Saudi Real Estate Financing"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Our Services",
+      "contact": "Contact Us"
+    },
+    "cta": "Request Service Now",
+    "siteName": "Arkan Al Dar Al Mutaqadima",
+    "siteDescription": "Comprehensive and Innovative Real Estate Solutions",
+    "available24_7": "Available 24/7"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "quickLinks": "Quick Links",
+    "services": "Our Products",
+    "contactUs": "Contact Us",
+    "copyright": "© {year} Anan Real Estate Solutions. All rights reserved",
+    "companyDescription": "One of the pioneering companies that created solutions for all segments of society, honored to serve thousands of clients over 5 years, earning their satisfaction and helping them obtain their dream homes.",
+    "propertyPurchase": "Property Purchase",
+    "propertyMortgage": "Property Mortgage",
+    "landAndLoan": "Land and Loan",
+    "selfConstruction": "Self-Construction",
+    "saudiArabia": "Kingdom of Saudi Arabia"
+  }
+}
