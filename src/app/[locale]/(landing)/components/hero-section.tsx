@@ -32,7 +32,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-12"
           >
-            <h1 className="text-center text-[3.5rem] font-black uppercase leading-none tracking-tighter text-gray-900 sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6.5rem] xl:text-[7.5rem]">
+            <h1 className="text-center text-[3.5rem] font-black uppercase leading-none tracking-tighter text-gray-900 sm:text-[4.5rem] md:text-[5.5rem] lg:text-[7.5rem] xl:text-[8.5rem]">
               {t("title")}
             </h1>
           </m.div>
@@ -87,7 +87,7 @@ export default function HeroSection() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="flex flex-col space-y-6 lg:pt-40"
             >
-              <div className="flex flex-wrap items-center justify-center gap-2 lg:items-start">
+              <div className="flex flex-wrap items-center justify-center gap-2">
                 <div className="flex size-8 items-center justify-center rounded-full border border-black">
                   <Home className="h-4 w-4 text-gray-700" />
                 </div>
