@@ -4,12 +4,124 @@
       "tooltip": "Contact us via WhatsApp"
     },
     "Hero": {
-      "title": "Anan Real Estate Solutions",
-      "subtitle": "Your Trusted Partner in Real Estate Brokerage Solutions",
-      "description": "Innovating more real estate consulting solutions to enable Saudi families to own suitable housing for their needs",
-      "cta": "Request Service Now",
+      "title": "ALEF Real Estate",
+      "subtitle": "Reliability and More...",
+      "description": "A specialized company in marketing and sales of unique real estate units. We believe that the success of real estate projects begins with adopting effective marketing strategies that accelerate sales and reach the target audience with efficiency and professionalism.",
+      "cta": "Connect With Us",
       "learnMore": "Learn More",
       "scrollText": "Discover More"
+    },
+    "About": {
+      "badge": "Who We Are",
+      "title": "ALEF Real Estate - Reliability and More",
+      "description": "ALEF Real Estate Marketing Company specializes in marketing and sales of unique real estate units. We believe that the success of real estate projects is not complete merely by implementing the highest quality standards, but actually begins by adopting effective marketing strategies that accelerate sales to reach the target audience efficiently and professionally, enhancing the brand's presence. Through a Saudi sales team, clients' aspirations turn into realistic solutions, seeking to ease the burden on real estate developers, to build a strategic partnership that achieves our clients' ambitions with confidence and success.",
+      "stats": {
+        "sales": "Sales Completed",
+        "contracts": "Exclusive Marketing Contracts",
+        "acceleration": "Sales Acceleration"
+      }
+    },
+    "Stats": {
+      "badge": "By The Numbers",
+      "title": "Our Achievements in Numbers",
+      "sales": {
+        "value": "35+",
+        "label": "Million SAR in Sales"
+      },
+      "acceleration": {
+        "value": "60%",
+        "label": "Sales Acceleration"
+      },
+      "referrals": {
+        "value": "45%",
+        "label": "Referral Purchases"
+      },
+      "database": {
+        "label": "Extensive database of interested clients"
+      }
+    },
+    "WhyUs": {
+      "badge": "Why ALEF",
+      "title": "Professionalism and More",
+      "subtitle": "We provide comprehensive solutions to ensure your project's success",
+      "features": {
+        "professionalism": {
+          "title": "High Professionalism",
+          "description": "High professionalism in sales and marketing"
+        },
+        "trust": {
+          "title": "Increased Reliability",
+          "description": "Increasing reliability with clients"
+        },
+        "branding": {
+          "title": "Brand Enhancement",
+          "description": "Enhancing brand reflection"
+        },
+        "advertising": {
+          "title": "Quality Advertising Tools",
+          "description": "Quality advertising tools supporting project reach to target audience"
+        },
+        "portfolio": {
+          "title": "Professional Portfolio",
+          "description": "Preparing project portfolio and quality project photography"
+        },
+        "reports": {
+          "title": "Periodic Reports",
+          "description": "Preparing periodic reports on sales progress and marketing plans"
+        }
+      }
+    },
+    "Speed": {
+      "badge": "Faster",
+      "title": "We Execute Deals Quickly and Professionally",
+      "features": {
+        "team": "Specialized Saudi sales team",
+        "followup": "Follow-up with all clients and communication with interested parties",
+        "promotion": "Professional media promotion",
+        "database": "Extensive client base",
+        "financing": "Exclusive offers on bank financing rates",
+        "reach": "Greater presence across all real estate applications"
+      }
+    },
+    "Execution": {
+      "badge": "We Execute Deals",
+      "title": "From Deposit to Transfer",
+      "features": {
+        "office": "Complete sales office at the project location",
+        "journey": "The journey with the client starts from receiving the deposit and ends at transfer",
+        "experience": "High-quality sales experience focused on client satisfaction",
+        "documents": "Providing necessary legal documents to complete the sale smoothly"
+      }
+    },
+    "Services": {
+      "badge": "Our Services",
+      "title": "Marketing Packages",
+      "subtitle": "Comprehensive services for your real estate project success",
+      "list": {
+        "office": "Providing a sales office at the project location",
+        "staff": "Providing specialized Saudi staff for project marketing",
+        "management": "Managing sales operations and accelerating bank financing",
+        "database": "Utilizing client database",
+        "advertising": "Executing advertising and media work",
+        "digital": "Digital marketing through real estate platforms",
+        "launch": "Organizing an opening ceremony",
+        "legal": "Providing legal documents",
+        "design": "Coordinating with show apartment designers",
+        "exhibition": "Organizing an accompanying interactive exhibition",
+        "campaigns": "Managing and executing paid marketing campaigns",
+        "reports": "Providing monthly reports including sales, visits, numbers, and client feedback"
+      }
+    },
+    "Pricing": {
+      "badge": "Partnership Model",
+      "title": "Partnership Built on Success",
+      "description": "ALEF Real Estate's financial model is a professional and innovative model based on the principle of partnership in success, where the company bears all financial burdens related to marketing, from funded advertising campaigns, media presence, production of promotional materials, portfolio, and professional photography of projects, without charging the developer any upfront costs.",
+      "model": "The financial consideration is a percentage of the total value of actual sales achieved, ensuring tangible results for the developer and fair costs based on performance and achievement, not just effort, making the model more efficient, transparent, and profitable for both parties."
+    },
+    "Contact": {
+      "badge": "Get In Touch",
+      "title": "Start Your Partnership Today",
+      "description": "Contact us to discuss your real estate project and how we can help you achieve success"
     }
   },
   "Error": {
@@ -25,28 +137,20 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Anan Real Estate Solutions | Your Trusted Partner in Real Estate Brokerage Solutions",
-    "short_name": "Anan Real Estate Solutions",
-    "description": "Anan Real Estate Solutions is one of the pioneering companies providing solutions for all segments of society since 2020. We specialize in advisory services and Sharia-compliant real estate solutions, including property purchase, property mortgage, land and loan, construction completion, self-construction, and commercial financing. Our goal is to innovate more real estate consulting solutions to enable Saudi families to own suitable housing and enhance their financial capabilities.",
+    "name": "ALEF Real Estate | For Marketing and Real Estate Development",
+    "short_name": "ALEF Real Estate",
+    "description": "Alef Real Estate is a Saudi company specialized in marketing residential projects. We build trust through professional strategies that connect developers with buyers and serve as the foundation for successful ventures.",
     "keywords": [
-      "Anan Real Estate Solutions",
-      "Real Estate Brokerage Solutions",
-      "Real Estate Financing",
-      "Property Purchase",
-      "Property Mortgage",
-      "Land and Loan",
-      "Construction Completion",
-      "Self-Construction",
-      "Commercial Financing",
-      "Real Estate Consulting",
-      "Subsidized Financing",
-      "Refinancing",
-      "Mortgage Release",
-      "Off-Plan Sales",
+      "ALEF Real Estate",
       "Real Estate Marketing",
-      "Property Management",
-      "Sharia-Compliant Solutions",
-      "Saudi Real Estate Financing"
+      "Real Estate Development",
+      "Residential Projects",
+      "Property Marketing Saudi Arabia",
+      "Real Estate Consulting",
+      "Project Development",
+      "Real Estate Solutions",
+      "Saudi Real Estate",
+      "Property Development"
     ]
   },
   "LocaleSwitcher": {
@@ -60,23 +164,22 @@
       "services": "Our Services",
       "contact": "Contact Us"
     },
-    "cta": "Request Service Now",
-    "siteName": "Arkan Al Dar Al Mutaqadima",
-    "siteDescription": "Comprehensive and Innovative Real Estate Solutions",
+    "cta": "Connect With Us",
+    "siteName": "ALEF Real Estate",
+    "siteDescription": "For Marketing and Real Estate Development",
     "available24_7": "Available 24/7"
   },
   "Footer": {
     "home": "Home",
     "about": "About Us",
     "quickLinks": "Quick Links",
-    "services": "Our Products",
+    "services": "Our Services",
     "contactUs": "Contact Us",
-    "copyright": "© {year} Anan Real Estate Solutions. All rights reserved",
-    "companyDescription": "One of the pioneering companies that created solutions for all segments of society, honored to serve thousands of clients over 5 years, earning their satisfaction and helping them obtain their dream homes.",
-    "propertyPurchase": "Property Purchase",
-    "propertyMortgage": "Property Mortgage",
-    "landAndLoan": "Land and Loan",
-    "selfConstruction": "Self-Construction",
+    "copyright": "© {year} ALEF Real Estate. All rights reserved",
+    "companyDescription": "Alef Real Estate is a Saudi company specialized in marketing residential projects, building trust through professional strategies.",
+    "marketing": "Real Estate Marketing",
+    "development": "Project Development",
+    "consulting": "Expert Consulting",
     "saudiArabia": "Kingdom of Saudi Arabia"
   }
 }

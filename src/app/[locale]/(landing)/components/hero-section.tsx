@@ -41,10 +41,10 @@ export default function HeroSection() {
         className="absolute inset-0 z-0"
       >
         <ExportedImage
-          src="/images/hero.jpeg"
-          alt="Real Estate Background"
+          src="/images/Generated Image September 05, 2025 - 11_10PM.jpeg"
+          alt="ALEF Real Estate - Modern Architecture"
           fill
-          className="object-cover brightness-50"
+          className="object-cover brightness-[0.45]"
           priority
           unoptimized
         />
@@ -58,7 +58,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-10 mix-blend-screen">
         <m.div
           animate={{
-            opacity: [0.2, 0.4, 0.2],
+            opacity: [0.15, 0.3, 0.15],
             scale: [1, 1.2, 1]
           }}
           transition={{
@@ -66,11 +66,11 @@ export default function HeroSection() {
             repeat: Infinity,
             ease: "easeInOut"
           }}
-          className="absolute left-1/4 top-1/4 h-64 w-64 rounded-full bg-[#1E488F]/30 blur-[100px] sm:h-96 sm:w-96"
+          className="absolute left-1/4 top-1/4 h-64 w-64 rounded-full bg-[#8B7355]/25 blur-[100px] sm:h-96 sm:w-96"
         />
         <m.div
           animate={{
-            opacity: [0.15, 0.35, 0.15],
+            opacity: [0.1, 0.25, 0.1],
             scale: [1.2, 1, 1.2]
           }}
           transition={{
@@ -79,7 +79,7 @@ export default function HeroSection() {
             ease: "easeInOut",
             delay: 1
           }}
-          className="absolute bottom-1/4 end-1/4 h-64 w-64 rounded-full bg-[#1E488F]/25 blur-[100px] sm:h-96 sm:w-96"
+          className="absolute bottom-1/4 end-1/4 h-64 w-64 rounded-full bg-[#A89B8C]/20 blur-[100px] sm:h-96 sm:w-96"
         />
       </div>
 

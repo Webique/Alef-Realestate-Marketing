@@ -13,9 +13,9 @@ type indexProps = {
 };
 
 export default function Logo({
-  src = "/images/logo.png",
-  width = 150,
-  height = 100,
+  src = "/images/logos/1.png",
+  width = 180,
+  height = 80,
   className,
   imgClassName,
   href = "/"
@@ -23,12 +23,12 @@ export default function Logo({
   return (
     <I18nLink
       href={href}
-      aria-label="site-logo"
+      aria-label="ALEF Real Estate Logo"
       className={cn("flex items-center gap-2.5", className)}
     >
       <ExportedImage
         className={cn(
-          "h-auto w-20 max-w-full overflow-hidden sm:w-24",
+          "h-auto w-28 max-w-full overflow-hidden sm:w-32",
           imgClassName
         )}
         src={src}
@@ -36,7 +36,7 @@ export default function Logo({
         height={height}
         placeholder="empty"
         priority
-        alt="site-logo"
+        alt="ALEF Real Estate Logo"
       />
     </I18nLink>
   );
