@@ -50,24 +50,26 @@ export default function PricingSection() {
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div className="border-primary/20 bg-primary/5 rounded-xl border p-4 text-center">
                 <div className="text-primary text-sm font-semibold">
-                  لا تكاليف مسبقة
+                  {t("features.noUpfront")}
                 </div>
                 <div className="mt-1 text-xs text-gray-600">
-                  Zero Upfront Costs
+                  {t("features.noUpfrontEn")}
                 </div>
               </div>
               <div className="border-primary/20 bg-primary/5 rounded-xl border p-4 text-center">
                 <div className="text-primary text-sm font-semibold">
-                  نسبة من المبيعات
+                  {t("features.percentage")}
                 </div>
-                <div className="mt-1 text-xs text-gray-600">% of Sales</div>
+                <div className="mt-1 text-xs text-gray-600">
+                  {t("features.percentageEn")}
+                </div>
               </div>
               <div className="border-primary/20 bg-primary/5 rounded-xl border p-4 text-center">
                 <div className="text-primary text-sm font-semibold">
-                  شراكة حقيقية
+                  {t("features.partnership")}
                 </div>
                 <div className="mt-1 text-xs text-gray-600">
-                  True Partnership
+                  {t("features.partnershipEn")}
                 </div>
               </div>
             </div>

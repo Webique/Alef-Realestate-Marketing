@@ -116,7 +116,15 @@
       "badge": "Partnership Model",
       "title": "Partnership Built on Success",
       "description": "ALEF Real Estate's financial model is a professional and innovative model based on the principle of partnership in success, where the company bears all financial burdens related to marketing, from funded advertising campaigns, media presence, production of promotional materials, portfolio, and professional photography of projects, without charging the developer any upfront costs.",
-      "model": "The financial consideration is a percentage of the total value of actual sales achieved, ensuring tangible results for the developer and fair costs based on performance and achievement, not just effort, making the model more efficient, transparent, and profitable for both parties."
+      "model": "The financial consideration is a percentage of the total value of actual sales achieved, ensuring tangible results for the developer and fair costs based on performance and achievement, not just effort, making the model more efficient, transparent, and profitable for both parties.",
+      "features": {
+        "noUpfront": "Zero Upfront Costs",
+        "noUpfrontEn": "No Initial Investment",
+        "percentage": "% of Sales",
+        "percentageEn": "Performance Based",
+        "partnership": "True Partnership",
+        "partnershipEn": "Win-Win Model"
+      }
     },
     "Contact": {
       "badge": "Get In Touch",

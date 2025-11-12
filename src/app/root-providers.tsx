@@ -1,8 +1,6 @@
 "use client";
 import { LazyMotion, domAnimation } from "motion/react";
 
-import { Toaster } from "@/components/ui/sonner";
-
 export default function RootProviders({
   children,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -14,7 +12,6 @@ export default function RootProviders({
   return (
     <>
       <LazyMotion features={domAnimation}>{children} </LazyMotion>
-      <Toaster />
     </>
   );
 }
