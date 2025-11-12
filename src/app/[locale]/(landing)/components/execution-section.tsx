@@ -76,13 +76,13 @@ export default function ExecutionSection() {
               <div className="border-primary/20 from-primary/5 rounded-2xl border bg-gradient-to-br to-transparent p-6">
                 <div className="text-primary mb-2 text-3xl font-bold">100%</div>
                 <div className="text-sm font-medium text-gray-600">
-                  رضا العملاء
+                  {t("stats.satisfaction")}
                 </div>
               </div>
               <div className="border-primary/20 from-accent/5 rounded-2xl border bg-gradient-to-br to-transparent p-6">
                 <div className="text-primary mb-2 text-3xl font-bold">24/7</div>
                 <div className="text-sm font-medium text-gray-600">
-                  دعم متواصل
+                  {t("stats.support")}
                 </div>
               </div>
             </m.div>
@@ -125,7 +125,7 @@ export default function ExecutionSection() {
                   </div>
                   <div>
                     <div className="text-sm font-medium text-gray-600">
-                      صفقات منجزة
+                      {t("stats.deals")}
                     </div>
                     <div className="text-secondary text-2xl font-bold">
                       500+

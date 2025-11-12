@@ -91,6 +91,11 @@
         "journey": "The journey with the client starts from receiving the deposit and ends at transfer",
         "experience": "High-quality sales experience focused on client satisfaction",
         "documents": "Providing necessary legal documents to complete the sale smoothly"
+      },
+      "stats": {
+        "satisfaction": "Customer Satisfaction",
+        "support": "Continuous Support",
+        "deals": "Completed Deals"
       }
     },
     "Services": {
