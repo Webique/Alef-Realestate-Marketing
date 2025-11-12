@@ -189,9 +189,9 @@ const Footer = () => {
                   <Phone className="h-5 w-5 text-[#A89B8C]" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-400">الهاتف</div>
+                  <div className="text-xs text-gray-300">{t("phone")}</div>
                   <div
-                    className="text-sm text-gray-200 group-hover:text-white"
+                    className="text-sm text-white group-hover:text-white"
                     dir="ltr"
                   >
                     {siteConfig.support.phone}
@@ -209,8 +209,8 @@ const Footer = () => {
                   <Mail className="h-5 w-5 text-[#A89B8C]" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-400">البريد الإلكتروني</div>
-                  <div className="text-sm text-gray-200 group-hover:text-white">
+                  <div className="text-xs text-gray-300">{t("email")}</div>
+                  <div className="text-sm text-white group-hover:text-white">
                     {siteConfig.support.email}
                   </div>
                 </div>
@@ -221,10 +221,8 @@ const Footer = () => {
                   <MapPin className="h-5 w-5 text-[#A89B8C]" />
                 </div>
                 <div>
-                  <div className="text-xs text-gray-400">الموقع</div>
-                  <div className="text-sm text-gray-200">
-                    {t("saudiArabia")}
-                  </div>
+                  <div className="text-xs text-gray-300">{t("location")}</div>
+                  <div className="text-sm text-white">{t("saudiArabia")}</div>
                 </div>
               </div>
             </div>
@@ -240,7 +238,7 @@ const Footer = () => {
           className="mt-16 border-t border-white/10 pt-8"
         >
           <div className="text-center">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
               {t("copyright", { year: currentYear })}
             </p>
           </div>
