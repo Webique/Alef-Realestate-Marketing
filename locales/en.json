@@ -6,10 +6,15 @@
     "Hero": {
       "title": "ALEF Real Estate",
       "subtitle": "Reliability and More...",
-      "description": "A specialized company in marketing and sales of unique real estate units. We believe that the success of real estate projects begins with adopting effective marketing strategies that accelerate sales and reach the target audience with efficiency and professionalism.",
+      "description": "We market your real estate projects professionally and accelerate sales to reach your target audience efficiently.",
       "cta": "Connect With Us",
       "learnMore": "Learn More",
-      "scrollText": "Discover More"
+      "scrollText": "Discover More",
+      "features": {
+        "professionalism": "High Professionalism",
+        "results": "Guaranteed Results",
+        "service": "Distinguished Service"
+      }
     },
     "About": {
       "badge": "Who We Are",

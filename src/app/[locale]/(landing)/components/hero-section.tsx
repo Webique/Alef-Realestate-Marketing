@@ -12,7 +12,7 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage.Hero");
 
   return (
-    <section className="from-primary/3 via-primary/8 to-primary/20 relative w-full bg-gradient-to-b py-20 lg:h-screen lg:py-24 2xl:h-[780px]">
+    <section className="from-primary/3 via-primary/8 to-primary/20 relative w-full bg-gradient-to-b py-20 lg:h-screen lg:min-h-[680px] lg:py-24 2xl:h-[780px]">
       {/* Diagonal Curved Line SVG */}
       <svg
         className="pointer-events-none absolute inset-0 h-full w-full"
@@ -110,17 +110,17 @@ export default function HeroSection() {
                 </div>
                 <div className="flex items-center rounded-full border border-black px-4 py-2">
                   <span className="text-sm font-medium text-gray-800">
-                    احترافية عالية
+                    {t("features.professionalism")}
                   </span>
                 </div>
                 <div className="flex items-center rounded-full border border-black px-4 py-2">
                   <span className="text-sm font-medium text-gray-800">
-                    نتائج مضمونة
+                    {t("features.results")}
                   </span>
                 </div>
                 <div className="flex items-center rounded-full border border-black px-4 py-2">
                   <span className="text-sm font-medium text-gray-800">
-                    خدمة متميزة
+                    {t("features.service")}
                   </span>
                 </div>
                 <a
