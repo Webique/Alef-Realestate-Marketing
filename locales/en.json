@@ -30,16 +30,20 @@
       "badge": "By The Numbers",
       "title": "Our Achievements in Numbers",
       "sales": {
-        "value": "35+",
-        "label": "Million SAR in Sales"
+        "value": "35",
+        "label": "Achieving sales that exceeded"
       },
       "acceleration": {
         "value": "60%",
-        "label": "Sales Acceleration"
+        "label": "Accelerating sales pace to"
+      },
+      "contracts": {
+        "value": "11+",
+        "label": "Value of exclusive marketing contracts signed"
       },
       "referrals": {
         "value": "45%",
-        "label": "Referral Purchases"
+        "label": "Profile"
       },
       "database": {
         "label": "Extensive database of interested clients"
@@ -50,10 +54,6 @@
       "title": "Professionalism and More",
       "subtitle": "We provide comprehensive solutions to ensure your project's success",
       "features": {
-        "professionalism": {
-          "title": "High Professionalism",
-          "description": "High professionalism in sales and marketing"
-        },
         "trust": {
           "title": "Increased Reliability",
           "description": "Increasing reliability with clients"
@@ -80,11 +80,10 @@
       "badge": "We are the fastest",
       "title": "We Execute Deals Quickly and Professionally",
       "features": {
-        "team": "Specialized Saudi sales team",
+        "team": "Saudi sales team with high experience in sales.",
         "followup": "Follow-up with all clients and communication with interested parties",
         "promotion": "Professional media promotion",
         "database": "Extensive client base",
-        "financing": "Exclusive offers on bank financing rates",
         "reach": "Greater presence across all real estate applications"
       },
       "stat": {
@@ -96,7 +95,7 @@
       "title": "From Deposit to Transfer",
       "features": {
         "office": "Complete sales office at the project location",
-        "journey": "The journey with the client starts from receiving the deposit and ends at transfer",
+        "journey": "The journey with the client starts from receiving the deposit and ends until key handover",
         "experience": "High-quality sales experience focused on client satisfaction",
         "documents": "Providing necessary legal documents to complete the sale smoothly"
       },
@@ -108,13 +107,12 @@
     },
     "Services": {
       "badge": "Our Services",
-      "title": "Marketing Packages",
+      "title": "Our Services",
       "subtitle": "Comprehensive services for your real estate project success",
       "list": {
         "office": "Providing a sales office at the project location",
         "staff": "Providing specialized Saudi staff for project marketing",
         "management": "Managing sales operations and accelerating bank financing",
-        "database": "Utilizing client database",
         "advertising": "Executing advertising and media work",
         "digital": "Digital marketing through real estate platforms",
         "launch": "Organizing an opening ceremony",
@@ -141,8 +139,7 @@
     },
     "Contact": {
       "badge": "Get In Touch",
-      "title": "Start Your Partnership Today",
-      "description": "Contact us to discuss your real estate project and how we can help you achieve success",
+      "title": "Partnership Built on Success, Start Your Partnership Today",
       "callUs": "Call Us",
       "email": "Email",
       "location": "Location",

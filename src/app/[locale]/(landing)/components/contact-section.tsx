@@ -46,10 +46,6 @@ export default function ContactSection() {
               {t("title")}
             </h2>
 
-            <p className="mb-10 text-lg text-white/80 sm:text-xl">
-              {t("description")}
-            </p>
-
             {/* Contact Info */}
             <div className="mb-10 space-y-4">
               <div className="flex items-center gap-4 text-white/90">

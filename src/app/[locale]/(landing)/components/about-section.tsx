@@ -1,19 +1,40 @@
 "use client";
 
-import { Award, Building2, Users } from "lucide-react";
+import { Building2, Database, FileText, TrendingUp, Users, Zap } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
-import { AnimatedCounter } from "@/components/animated-counter";
-
 export default function AboutSection() {
   const t = useTranslations("IndexPage.About");
+  const tStats = useTranslations("IndexPage.Stats");
 
   const stats = [
-    { icon: Building2, value: 35, label: t("stats.sales") },
-    { icon: Users, value: 60, label: t("stats.acceleration") },
-    { icon: Award, value: 45, label: t("stats.contracts") }
+    {
+      icon: TrendingUp,
+      value: tStats("sales.value"),
+      label: tStats("sales.label"),
+      suffix: "مليون",
+      gradient: "from-primary to-accent"
+    },
+    {
+      icon: Zap,
+      value: tStats("acceleration.value"),
+      label: tStats("acceleration.label"),
+      gradient: "from-primary to-accent"
+    },
+    {
+      icon: FileText,
+      value: tStats("contracts.value"),
+      label: tStats("contracts.label"),
+      gradient: "from-accent to-accent/80"
+    },
+    {
+      icon: Users,
+      value: tStats("referrals.value"),
+      label: tStats("referrals.label"),
+      gradient: "from-accent to-accent/80"
+    }
   ];
 
   return (
@@ -48,31 +69,80 @@ export default function AboutSection() {
           <p className="mb-12 text-lg leading-relaxed text-gray-600 sm:text-xl">
             {t("description")}
           </p>
+        </m.div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-            {stats.map((stat, index) => (
-              <m.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="group relative"
-              >
-                <div className="from-primary/20 to-accent/10 absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-0 blur transition duration-300 group-hover:opacity-100" />
-                <div className="relative rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-shadow duration-300 group-hover:shadow-lg">
-                  <stat.icon className="text-primary mx-auto mb-4 h-10 w-10" />
-                  <div className="mb-2 text-4xl font-bold text-gray-900">
-                    <AnimatedCounter end={stat.value} />
-                    <span>+</span>
-                  </div>
-                  <div className="text-sm font-medium text-gray-600">
-                    {stat.label}
-                  </div>
-                </div>
-              </m.div>
-            ))}
+        {/* Stats Section */}
+        <m.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mx-auto mb-16 max-w-3xl"
+        >
+          <div className="mb-8 text-center">
+            <h3 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">
+              {tStats("title")}
+            </h3>
           </div>
+
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat, index) => {
+              const isSales = index === 0; // تحقيق مبيعات
+              
+              return (
+                <m.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                  className="group relative"
+                >
+                  <div
+                    className="absolute -inset-1 rounded-3xl bg-gradient-to-r opacity-0 blur transition duration-300 group-hover:opacity-100"
+                    style={{
+                      backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))`
+                    }}
+                  />
+                  <div className="relative h-full rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition-all duration-300 group-hover:shadow-xl">
+                    <div
+                      className={`mx-auto mb-6 inline-flex rounded-2xl bg-gradient-to-r ${stat.gradient} p-4`}
+                    >
+                      <stat.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="mb-2 text-sm font-medium text-gray-600 leading-relaxed">
+                      {stat.label}
+                    </div>
+                    <div className="text-4xl font-bold text-gray-900">
+                      {isSales ? (
+                        <>
+                          {stat.value}
+                          {stat.suffix && <span className="text-2xl"> {stat.suffix}</span>}
+                        </>
+                      ) : (
+                        stat.value
+                      )}
+                    </div>
+                  </div>
+                </m.div>
+              );
+            })}
+          </div>
+
+          <m.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-12 text-center"
+          >
+            <div className="border-primary/20 bg-primary/5 mx-auto inline-flex items-center gap-3 rounded-2xl border px-6 py-4">
+              <Database className="text-primary h-6 w-6" />
+              <span className="text-base font-medium text-gray-700">
+                {tStats("database.label")}
+              </span>
+            </div>
+          </m.div>
         </m.div>
 
         {/* Image Gallery */}

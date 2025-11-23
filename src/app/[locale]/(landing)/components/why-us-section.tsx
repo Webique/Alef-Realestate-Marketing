@@ -16,19 +16,14 @@ export default function WhyUsSection() {
 
   const features = [
     {
-      icon: Award,
-      title: t("features.professionalism.title"),
-      description: t("features.professionalism.description")
+      icon: Sparkles,
+      title: t("features.branding.title"),
+      description: t("features.branding.description")
     },
     {
       icon: Shield,
       title: t("features.trust.title"),
       description: t("features.trust.description")
-    },
-    {
-      icon: Sparkles,
-      title: t("features.branding.title"),
-      description: t("features.branding.description")
     },
     {
       icon: Target,

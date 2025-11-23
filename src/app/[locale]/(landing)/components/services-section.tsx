@@ -2,7 +2,6 @@
 
 import {
   Building,
-  Database,
   FileCheck,
   FileText,
   Megaphone,
@@ -24,7 +23,6 @@ export default function ServicesSection() {
     { icon: Building, text: t("list.office") },
     { icon: Users, text: t("list.staff") },
     { icon: TrendingUp, text: t("list.management") },
-    { icon: Database, text: t("list.database") },
     { icon: Megaphone, text: t("list.advertising") },
     { icon: Smartphone, text: t("list.digital") },
     { icon: PartyPopper, text: t("list.launch") },

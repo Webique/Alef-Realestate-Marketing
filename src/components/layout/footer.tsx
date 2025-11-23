@@ -1,13 +1,29 @@
 "use client";
 
-import { Mail, MapPin, Phone } from "lucide-react";
+import {
+  Instagram,
+  Mail,
+  MapPin,
+  Phone
+} from "lucide-react";
+import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
-import Instagram from "@/assets/icons/instagram.svg";
-import TickTock from "@/assets/icons/tiktok.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
+
+// TikTok Icon Component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a4.85 4.85 0 0 0 4.09-4.9c0-.26-.03-.52-.07-.78Z" />
+  </svg>
+);
 
 const Footer = () => {
   const t = useTranslations("Footer");
@@ -34,21 +50,27 @@ const Footer = () => {
       target: "_blank"
     },
     {
-      icon: TickTock,
+      icon: FaXTwitter,
+      href: `${siteConfig.links.x}`,
+      label: "X (Twitter)",
+      target: "_blank"
+    },
+    {
+      icon: TikTokIcon,
       href: `${siteConfig.links.tiktok}`,
       label: "TikTok",
+      target: "_blank"
+    },
+    {
+      icon: FaSnapchat,
+      href: `${siteConfig.links.snapchat}`,
+      label: "Snapchat",
       target: "_blank"
     },
     {
       icon: Mail,
       href: `mailto:${siteConfig.support.email}`,
       label: "Email",
-      target: "_blank"
-    },
-    {
-      icon: Phone,
-      href: `tel:${siteConfig.support.phone}`,
-      label: "WhatsApp",
       target: "_blank"
     }
   ];
@@ -104,7 +126,7 @@ const Footer = () => {
                       whileHover={{ y: -3 }}
                       whileTap={{ scale: 0.95 }}
                     >
-                      <Icon className="relative z-10 h-5 w-5 text-gray-300 transition-colors group-hover:text-white" />
+                      <Icon className="relative z-10 h-5 w-5 text-white" />
                       <div className="from-primary to-accent absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity group-hover:opacity-20" />
                     </m.a>
                   );

@@ -3,7 +3,6 @@
 import {
   Database,
   Megaphone,
-  Percent,
   Share2,
   TrendingUp,
   Users
@@ -20,7 +19,6 @@ export default function SpeedSection() {
     { icon: TrendingUp, text: t("features.followup") },
     { icon: Megaphone, text: t("features.promotion") },
     { icon: Database, text: t("features.database") },
-    { icon: Percent, text: t("features.financing") },
     { icon: Share2, text: t("features.reach") }
   ];
 
