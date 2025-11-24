@@ -144,7 +144,8 @@
       "email": "Email",
       "location": "Location",
       "saudiArabia": "Kingdom of Saudi Arabia",
-      "available": "Always Available"
+      "available": "Always Available",
+      "connectWithUs": "Connect With Us"
     }
   },
   "Error": {

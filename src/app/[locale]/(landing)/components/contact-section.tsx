@@ -1,11 +1,24 @@
 "use client";
 
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { FaSnapchat, FaXTwitter } from "react-icons/fa6";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 import { siteConfig } from "@/config/site";
+
+// TikTok Icon Component
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a4.85 4.85 0 0 0 4.09-4.9c0-.26-.03-.52-.07-.78Z" />
+  </svg>
+);
 
 export default function ContactSection() {
   const t = useTranslations("IndexPage.Contact");
@@ -48,8 +61,11 @@ export default function ContactSection() {
 
             {/* Contact Info */}
             <div className="mb-10 space-y-4">
-              <div className="flex items-center gap-4 text-white/90">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
+              <a
+                href={`tel:${siteConfig.support.phone}`}
+                className="group flex items-center gap-4 text-white/90 transition-colors hover:text-white"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 transition-colors group-hover:bg-white/15">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
@@ -58,10 +74,15 @@ export default function ContactSection() {
                     {siteConfig.support.phone}
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div className="flex items-center gap-4 text-white/90">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
+              <a
+                href={`mailto:${siteConfig.support.email}`}
+                className="group flex items-center gap-4 text-white/90 transition-colors hover:text-white"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 transition-colors group-hover:bg-white/15">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
@@ -70,7 +91,7 @@ export default function ContactSection() {
                     {siteConfig.support.email}
                   </div>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-center gap-4 text-white/90">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10">
@@ -80,6 +101,54 @@ export default function ContactSection() {
                   <div className="text-sm text-white/60">{t("location")}</div>
                   <div className="font-semibold">{t("saudiArabia")}</div>
                 </div>
+              </div>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="space-y-4">
+              <h4 className="text-sm font-bold uppercase tracking-wider text-white">
+                {t("connectWithUs")}
+              </h4>
+              <div className="flex gap-3">
+                {[
+                  {
+                    icon: Instagram,
+                    href: siteConfig.links.instagram,
+                    label: "Instagram"
+                  },
+                  {
+                    icon: FaXTwitter,
+                    href: siteConfig.links.x,
+                    label: "X (Twitter)"
+                  },
+                  {
+                    icon: TikTokIcon,
+                    href: siteConfig.links.tiktok,
+                    label: "TikTok"
+                  },
+                  {
+                    icon: FaSnapchat,
+                    href: siteConfig.links.snapchat,
+                    label: "Snapchat"
+                  }
+                ].map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <m.a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white/5 transition-all hover:bg-white/10"
+                      aria-label={social.label}
+                      whileHover={{ y: -3 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Icon className="relative z-10 h-5 w-5 text-white" />
+                      <div className="from-primary to-accent absolute inset-0 bg-gradient-to-br opacity-0 transition-opacity group-hover:opacity-20" />
+                    </m.a>
+                  );
+                })}
               </div>
             </div>
           </m.div>
