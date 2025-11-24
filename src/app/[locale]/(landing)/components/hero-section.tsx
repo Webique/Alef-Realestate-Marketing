@@ -54,14 +54,31 @@ export default function HeroSection() {
             </h1>
           </m.div>
 
+          {/* Hero Image - Below Title */}
+          <m.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="relative z-10 mb-12 flex items-center justify-center"
+          >
+            <ExportedImage
+              src="/images/1.png"
+              alt="ALEF Real Estate - Modern Architecture"
+              width={800}
+              height={900}
+              className="h-auto w-full max-w-md rounded-3xl object-contain shadow-2xl lg:max-w-lg xl:max-w-lg 2xl:max-w-3xl"
+              priority
+            />
+          </m.div>
+
           {/* Content Grid */}
-          <div className="mt-[-89px] grid grid-cols-1 gap-8 lg:grid-cols-[1fr_2fr_1fr] lg:gap-12">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1fr] lg:gap-12">
             {/* Start Side Content */}
             <m.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col space-y-6 pt-20 text-center lg:pt-40 lg:text-start"
+              className="flex flex-col space-y-6 text-center lg:text-start"
             >
               <p className="text-sm leading-relaxed text-gray-800 sm:text-base">
                 {t("description")}
@@ -80,29 +97,12 @@ export default function HeroSection() {
               </Button>
             </m.div>
 
-            {/* Center - Hero Image */}
-            <m.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="relative z-10 flex items-end justify-center"
-            >
-              <ExportedImage
-                src="/images/hero.png"
-                alt="ALEF Real Estate - Modern Architecture"
-                width={800}
-                height={900}
-                className="h-auto w-full max-w-md object-contain lg:max-w-lg xl:max-w-lg 2xl:max-w-3xl"
-                priority
-              />
-            </m.div>
-
             {/* End Side Feature Tags */}
             <m.div
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-col space-y-6 lg:pt-40"
+              className="flex flex-col space-y-6"
             >
               <div className="flex flex-wrap items-center justify-center gap-2">
                 <div className="flex size-8 items-center justify-center rounded-full border border-black">
