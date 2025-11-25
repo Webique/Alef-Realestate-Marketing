@@ -22,8 +22,8 @@ export default function StatsSection() {
     },
     {
       icon: Users,
-      value: t("referrals.value"),
-      label: t("referrals.label"),
+      value: t("contracts.value"),
+      label: t("contracts.label"),
       gradient: "from-accent to-accent/80"
     }
   ];
