@@ -3,9 +3,10 @@
 import { Building2, Database, FileText, TrendingUp, Zap } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function AboutSection() {
+  const locale = useLocale();
   const t = useTranslations("IndexPage.About");
   const tStats = useTranslations("IndexPage.Stats");
 
@@ -14,7 +15,7 @@ export default function AboutSection() {
       icon: TrendingUp,
       value: tStats("sales.value"),
       label: tStats("sales.label"),
-      suffix: "مليون",
+      suffix: locale === "ar" ? "مليون" : undefined,
       gradient: "from-primary to-accent"
     },
     {
@@ -27,7 +28,7 @@ export default function AboutSection() {
       icon: FileText,
       value: tStats("contracts.value"),
       label: tStats("contracts.label"),
-      suffix: "مليون",
+      suffix: locale === "ar" ? "مليون" : undefined,
       gradient: "from-accent to-accent/80"
     }
   ];
