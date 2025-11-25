@@ -1,6 +1,6 @@
 "use client";
 
-import { Building2, Database, FileText, TrendingUp, Users, Zap } from "lucide-react";
+import { Building2, Database, FileText, TrendingUp, Zap } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
@@ -27,12 +27,7 @@ export default function AboutSection() {
       icon: FileText,
       value: tStats("contracts.value"),
       label: tStats("contracts.label"),
-      gradient: "from-accent to-accent/80"
-    },
-    {
-      icon: Users,
-      value: tStats("referrals.value"),
-      label: tStats("referrals.label"),
+      suffix: "مليون",
       gradient: "from-accent to-accent/80"
     }
   ];
@@ -85,10 +80,8 @@ export default function AboutSection() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {stats.map((stat, index) => {
-              const isSales = index === 0; // تحقيق مبيعات
-              
               return (
                 <m.div
                   key={index}
@@ -114,14 +107,8 @@ export default function AboutSection() {
                       {stat.label}
                     </div>
                     <div className="text-4xl font-bold text-gray-900">
-                      {isSales ? (
-                        <>
-                          {stat.value}
-                          {stat.suffix && <span className="text-2xl"> {stat.suffix}</span>}
-                        </>
-                      ) : (
-                        stat.value
-                      )}
+                      {stat.value}
+                      {stat.suffix && <span className="text-2xl"> {stat.suffix}</span>}
                     </div>
                   </div>
                 </m.div>

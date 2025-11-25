@@ -37,9 +37,7 @@ const Footer = () => {
   ];
 
   const services = [
-    { label: t("marketing"), href: "#services" },
-    { label: t("development"), href: "#services" },
-    { label: t("consulting"), href: "#services" }
+    { label: t("marketing"), href: "#services" }
   ];
 
   const socialLinks = [
@@ -259,10 +257,28 @@ const Footer = () => {
           viewport={{ once: true }}
           className="mt-16 border-t border-white/10 pt-8"
         >
-          <div className="text-center">
+          <div className="space-y-4 text-center">
             <p className="text-sm text-gray-300">
               {t("copyright", { year: currentYear })}
             </p>
+            
+            {/* License Information */}
+            <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-400">
+              <div>
+                <span className="text-gray-500">{t("license.number")}: </span>
+                <span className="font-medium">{t("license.licenseNumber")}</span>
+              </div>
+              <div className="hidden sm:block">|</div>
+              <div>
+                <span className="text-gray-500">{t("license.licensedName")}: </span>
+                <span className="font-medium">{t("license.companyName")}</span>
+              </div>
+              <div className="hidden sm:block">|</div>
+              <div>
+                <span className="text-gray-500">{t("license.activity")}: </span>
+                <span className="font-medium">{t("license.activityDescription")}</span>
+              </div>
+            </div>
           </div>
         </m.div>
       </div>

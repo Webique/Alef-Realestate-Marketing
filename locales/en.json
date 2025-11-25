@@ -30,20 +30,16 @@
       "badge": "By The Numbers",
       "title": "Our Achievements in Numbers",
       "sales": {
-        "value": "35",
-        "label": "Achieving sales that exceeded"
+        "value": "40+",
+        "label": "Sales"
       },
       "acceleration": {
         "value": "60%",
         "label": "Accelerating sales pace to"
       },
       "contracts": {
-        "value": "11+",
-        "label": "Value of exclusive marketing contracts signed"
-      },
-      "referrals": {
-        "value": "45%",
-        "label": "Profile"
+        "value": "100+",
+        "label": "Value of Exclusive Contracts"
       },
       "database": {
         "label": "Extensive database of interested clients"
@@ -92,7 +88,7 @@
     },
     "Execution": {
       "badge": "We Execute Deals",
-      "title": "From Deposit to Transfer",
+      "title": "From Deposit to Key Handover",
       "features": {
         "office": "Complete sales office at the project location",
         "journey": "The journey with the client starts from receiving the deposit and ends until key handover",
@@ -205,9 +201,15 @@
     "location": "Location",
     "copyright": "© {year} ALEF Real Estate. All rights reserved",
     "companyDescription": "Alef Real Estate is a Saudi company specialized in marketing residential projects, building trust through professional strategies.",
+    "license": {
+      "number": "License Number",
+      "licenseNumber": "1200040345",
+      "licensedName": "Licensed Name",
+      "companyName": "Alef Al-Masaken Company",
+      "activity": "Real Estate Activity",
+      "activityDescription": "Fal for Brokerage and Marketing"
+    },
     "marketing": "Real Estate Marketing",
-    "development": "Project Development",
-    "consulting": "Expert Consulting",
     "saudiArabia": "Kingdom of Saudi Arabia",
     "socialMedia": {
       "instagram": "Instagram",
