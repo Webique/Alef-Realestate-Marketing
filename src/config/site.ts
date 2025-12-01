@@ -12,7 +12,7 @@ export const siteConfig = {
 
   support: {
     phone: "+966550500407",
-    email: "contact@alefRealestate.com",
+    email: "A.Almutlaq19@gmail.com",
     whatsapp: "+966550500407"
   },
 
